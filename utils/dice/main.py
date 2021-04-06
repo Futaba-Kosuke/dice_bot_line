@@ -21,7 +21,7 @@ def roll_dice (dice: str) -> List[int]:
 # コマンド実行
 def exec_command (command: str) -> str:
 
-    elements = command_splitter(command)
+    elements = command_splitter(zen_to_han(command))
     result = ''
     total = 0
 
@@ -58,7 +58,7 @@ def exec_command (command: str) -> str:
     return result
 
 def main():
-    command = zen_to_han(input('command >> ').split()[0])
+    command = input('command >> ').split()[0]
     result = exec_command(command)
     print(result)
 
