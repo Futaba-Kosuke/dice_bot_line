@@ -11,6 +11,9 @@ def command_splitter (string: str) -> List[str]:
 # ダイスを振る
 def roll_dice (dice: str) -> List[int]:
     articles, faces = re.split('[d]', dice)
+
+    if articles == '0' or faces == '0':
+        return [0]
     
     result = [0] * int(articles)
     for i in range(int(articles)):
@@ -38,6 +41,11 @@ def exec_command (command: str) -> str:
 
         elif 'd' in elem:
             rolled = roll_dice(elem)
+
+            if rolled == [0]:
+                result += '0 '
+                continue
+
             result += f'{sum(rolled)}[{", ".join(map(str, rolled))}]'
             if is_plus:
                 total += sum(rolled)
