@@ -1,6 +1,8 @@
 # dice_bot_line
  
-TRPGなどに欠かせないダイスロールをLINEボットで実装しました。
+TRPGなどに欠かせないダイスロールをLINEボットで実装しました。   
+
+![](./.imgs/readme_002.png)
  
 ## Demo
  
