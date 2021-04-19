@@ -6,7 +6,7 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
-from utils.dice.main import exec_command
+from utils.dice_tool import exec_command
 
 app = Flask(__name__)
 
