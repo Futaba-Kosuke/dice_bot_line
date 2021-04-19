@@ -1,0 +1,3 @@
+[submodule "dice_tool"]
+	path = dice_tool
+	url = git@github.com:Futaba-Kosuke/dice_tool.git
