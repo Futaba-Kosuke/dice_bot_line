@@ -16,7 +16,7 @@ TRPGなどに欠かせないダイスロールをLINEボットで実装しまし
  
 ```bash
 # Clone
-git clone https://github.com/Futaba-Kosuke/dice_bot_line
+git clone --recursive https://github.com/Futaba-Kosuke/dice_bot_line
 cd dice_bot_line
 
 # (optional) Build the virtual environment
